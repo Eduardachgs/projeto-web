@@ -23,6 +23,16 @@ p{
   color: white;
 }
 
+.blocos{
+  margin: 2em;
+
+}
+
+.bordas{
+  border: 2px white solid;
+  border-radius: 10px;
+}
+
 .coisas{
   font-style:italic;
   font-size: 1.3em;
@@ -33,7 +43,6 @@ p{
 .favoritos{
   display: flex;
   justify-content: center;
-
 }
 
 .topicos{
@@ -45,8 +54,8 @@ p{
 }
 
 .gato{
+  margin-top: 5em;
   display: flex;
-  margin-left: 2em;
   justify-content: center;
 }
 
@@ -54,20 +63,10 @@ p{
   justify-content: center;
   margin-left: 2em;
   margin-right: 2em;
-  z-index: 1;
-}
-
-.gatinhos2{
-  display: none;
-}
-
-.gatinhos:hover{
-  background-image: url(nero_redondo-derp.png);
-  z-index: 10;
 }
 
 .logos{
-  margin-top: 20em;
+  margin-top: 15em;
   margin-bottom: 1em;
   display: flex;
   margin-left: 2em;
