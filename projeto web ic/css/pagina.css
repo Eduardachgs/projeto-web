@@ -3,12 +3,20 @@ html {
     background-size: cover;
   }
 
+h1{
+  margin-top: 3em;
+}
+
 .texto{
     font-style:italic;
     font-size: 1.3em;
-    text-shadow: 2px 2px 4px #000000;
+    text-shadow: 4px 4px 4px #000000;
     color: white;
-    
+}
+
+.limite-texto{
+  width: 100%;
+  justify-content: center;
 }
 
 p{
@@ -24,16 +32,19 @@ p{
 }
 
 .blocos{
-  margin: 2em;
+  margin: 3em;
 
 }
 
 .bordas{
-  border: 2px white solid;
+  border: 2px white groove;
   border-radius: 10px;
+  justify-content: center;
 }
 
 .coisas{
+  display: flex;
+  justify-content: center;
   font-style:italic;
   font-size: 1.3em;
   text-shadow: 2px 2px 4px #000000;
@@ -46,7 +57,7 @@ p{
 }
 
 .topicos{
-  margin-left: 3em;
+  padding: 1.5em;
   font-style:italic;
   font-size: 1em;
   text-shadow: 2px 2px 4px #000000;
@@ -54,7 +65,7 @@ p{
 }
 
 .gato{
-  margin-top: 5em;
+  margin-top: 2em;
   display: flex;
   justify-content: center;
 }
@@ -66,15 +77,34 @@ p{
 }
 
 .logos{
-  margin-top: 15em;
+  margin-top: 12em;
   margin-bottom: 1em;
   display: flex;
-  margin-left: 2em;
+  padding: 0 5% 0 5%;
   justify-content: center;
+  gap: 50px;
 }
 
 .loguinhos{
   justify-content: center;
-  margin-left: 2em;
-  margin-right: 2em;
+}
+
+@media screen and (max-width: 1000px){
+  .favoritos{
+    flex-direction: column;
+    padding: 0 20% 0 20%;
+  }
+  .gato{
+    flex-direction: column;
+  }
+  .loguinhos{
+    width: 50px;
+  }
+  .blocos{
+    max-width: 400px;
+    text-align: center;
+  }
+  .texto{
+    padding: 0 20% 0 20%;
+  }
 }
